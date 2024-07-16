@@ -1,4 +1,3 @@
-[17:26] Abdessamad Ammi Hafaou
 name: CI Pipeline
 
 on: [push, pull_request]
