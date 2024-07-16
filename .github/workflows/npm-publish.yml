@@ -4,25 +4,25 @@ on: [push, pull_request]
 
 jobs:
 
-build:
+ build:
 
-  runs-on: ubuntu-latest
+   runs-on: ubuntu-latest
 
-  steps:
+   steps:
 
-  - uses: actions/checkout@v2
+   - uses: actions/checkout@v2
 
-  - name: Set up Node.js
+   - name: Set up Node.js
 
-    uses: actions/setup-node@v2
+     uses: actions/setup-node@v2
 
-    with:
+     with:
 
-     node-version: '16'
+      node-version: '16'
 
-  - run: npm install
+   - run: npm install
 
-  - run: npm run test
+   - run: npm run test
 
-  - run: npm run build
+   - run: npm run build
  
